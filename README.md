@@ -18,4 +18,4 @@ Link del evento: [KotlinEverywhere Cali](https://kotlin.gdgcali.co)
 ### Authors
 
 - Stiven Castillo [@bacabange](https://github.com/bacabange)
-- Jose Giraldo [@jcgiraldo](https://github.com/jocgiraldo)
+- Jose Giraldo [@jocgiraldo](https://github.com/jocgiraldo) - [Facebook](https://www.facebook.com/joseessintilde) - [Instagram](https://www.instagram.com/joseessintilde/)
