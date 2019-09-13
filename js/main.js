@@ -64,7 +64,7 @@ jQuery(function($) {
 
   if ($('.countdown').length > 0) {
     $('.countdown').jCounter({
-      date: '06 July 2019 08:00:00',
+      date: '12 October 2019 10:00:00',
       fallback: function() {
         console.log('count finished!');
       }
