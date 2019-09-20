@@ -258,7 +258,7 @@ img.pull-right {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  /* background: #607D8B; */
+  background-color: #607D8B;
   height: 50px;
   padding: 0 35px;
   line-height: 50px;
@@ -273,13 +273,13 @@ img.pull-right {
   outline: none;
   position:relative;
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid #607D8B;
   cursor: pointer; }
-  .btn:before {
+  /* .btn:before {
     position: absolute;
     left: -10px;
     top: 10px;
-    background: #607D8B;
+    background: #0acbf5;
     content: '';
     bottom: 0;
     width: 100%;
@@ -288,7 +288,7 @@ img.pull-right {
     z-index: -1;
     display: inline-block;
     padding: 0 35px;
-  }
+  } */
   .btn:focus {
     outline: none; }
   .btn:hover {
@@ -303,10 +303,10 @@ img.pull-right {
     color: #000;
     margin-top: 30px;
   }
-  .sponsor-btn > .btn:before {
-    background: #fff582;
+  /* .sponsor-btn > .btn:before {
+    background: #0acbf5;
     height: 50px;
-  }
+  } */
   .btn.fill {
     background: transparent;
     padding: 0 25px;
@@ -549,7 +549,7 @@ img.pull-right {
   .header.header-classic ul.navbar-nav > li.active > a {
     color: #000; }
   .header.header-classic ul.navbar-nav > li.header-ticket .ticket-btn {
-    background: transparent !important;
+    /* background: transparent !important; */
     color: #fff; }
     .header.header-classic ul.navbar-nav > li.header-ticket .ticket-btn:before {
       left: -5px;
@@ -616,7 +616,7 @@ img.pull-right {
       font-weight: normal;
       line-height: 24px;
       margin-bottom: 24px;
-      color: #34a853;
+      color: #fff;
       }
     .banner-item .banner-content-wrap .banner-title {
       font-size: 64px;
@@ -641,6 +641,7 @@ img.pull-right {
     display: inline-block;
     width: 100px;
     height: 100px;
+    background-color: #fff;
     border: 1px solid #4385f4;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -650,10 +651,10 @@ img.pull-right {
     margin-right: 18px;
     padding: 30px 0;
     position: relative; }
-    .countdown .counter-item:before {
+    /* .countdown .counter-item:before {
       position: absolute;
-      left: -18px;
-      top: 18px;
+      left: -9px;
+      top: 9px;
       margin: auto;
       background: #fff;
       content: '';
@@ -665,7 +666,7 @@ img.pull-right {
       right: 0;
       height: 100px;
       z-index: -1;
-    }
+    } */
     .countdown .counter-item i {
       font-size: 105px;
       width: 100%;
@@ -706,6 +707,7 @@ img.pull-right {
   }
   .countdown .counter-item:before {
     width: 60px;
+    height: 60px;
   }
   .countdown .counter-item span {
     font-size: 18px;
@@ -752,7 +754,7 @@ img.pull-right {
 .hero-area.centerd-item .banner-item {
   min-height: 500px;
   padding: 0;
-  background: url(../images/gdg/devfest-bg.png) no-repeat center;
+  background: url(../images/home1.jpeg) no-repeat center;
   background-size: cover;
 }
 
@@ -2198,7 +2200,7 @@ img.pull-right {
         position: absolute;
         left: -3px;
         top: 3px;
-        background: #fff582;
+        background: #0acbf5;
         content: '';
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -3034,10 +3036,10 @@ faq-item
 
 /*------------back to top-------------*/
 .BackTo {
-  background: #fff582 none repeat scroll 0 0;
+  background: #0acbf5 none repeat scroll 0 0;
   border-radius: 50%;
   bottom: 35px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   height: 44px;
   position: fixed;
@@ -3048,7 +3050,61 @@ faq-item
   display: block;
   padding: 8px 0; }
   .BackTo a {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     font-weight: 700;
     margin-top: 2px; }
+
+    .tematicas {
+      display: flex;
+    }
+    .tematicas div {
+      padding: 20px;
+      margin: 0 1%;
+      text-align: center;
+      border-radius: 5%;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
+    }
+    .tweb {
+      background-color: #0acbf5;
+      color: #fff;
+      font-weight: 700
+    }
+    .tcloud {
+      background-color: #363d8a;
+      color: #fff;
+      font-weight: 700
+    }
+    .tux {
+      background-color: #ff0066;
+      color: #fff;
+      font-weight: 700
+    }
+    .tmov {
+      background-color: #82e182;
+      color: #fff;
+      font-weight: 700
+    }
+    .tdiv {
+      background-color: #a742c6;
+      color: #fff;
+      font-weight: 700
+    }
+
+    @media (max-width: 600px) {
+      .tematicas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .tematicas div {
+        margin: 1%;
+      }
+
+      .sponsors-logo .img-fluid {
+        max-width: 200px;
+      }
+    }

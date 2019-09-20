@@ -1,5 +1,5 @@
 /*==========================
-tab rotate 
+tab rotate
 ===========================*/
 @media (min-width: 992px) and (max-width: 1200px) {
   .header ul.navbar-nav > li > a {
@@ -45,7 +45,7 @@ tab rotate
     font-size: 32px; } }
 
 /*==========================
-tab device 
+tab device
 ===========================*/
 @media (min-width: 768px) and (max-width: 991px) {
   .dropdown-menu.show {
@@ -66,9 +66,10 @@ tab device
     width: auto;
     height: auto; }
   .header .navbar-light .navbar-toggler {
-    background: #e7015e;
+    background: #0acbf5;
     color: #fff;
-    border-color: #e7015e; }
+    border-color: #0acbf5;
+    }
   .header ul.navbar-nav > li > a {
     line-height: 40px !important; }
     .header ul.navbar-nav > li > a i {
@@ -81,7 +82,7 @@ tab device
   .header-classic {
     padding: 10px 0; }
   .header-transparent .navbar-toggler {
-    background: #e7015e;
+    background: #0acbf5;
     color: #fff; }
   .header-transparent .navbar-nav {
     background: #222;
@@ -270,9 +271,10 @@ small device /mobile sm and large
   .header.header-transparent.nav-border .navbar {
     padding: 10px 0; }
   .header .navbar-light .navbar-toggler {
-    background: #e7015e;
+    background: #0acbf5;
     color: #fff;
-    border-color: #e7015e; }
+    border-color: #0acbf5;
+    }
   .header ul.navbar-nav > li > a {
     line-height: 40px !important; }
     .header ul.navbar-nav > li > a i {
