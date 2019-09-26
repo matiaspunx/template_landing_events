@@ -288,8 +288,10 @@ small device /mobile sm and large
   .navbar-nav {
     padding: 20px 0; }
   .navbar-toggler {
-    padding: 8px;
-    cursor: pointer; }
+    padding: 4px 8px;
+    cursor: pointer;
+    margin: 8px 0;
+    }
   .navbar-toggler-icon {
     width: auto;
     height: auto; }

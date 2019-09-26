@@ -273,7 +273,6 @@ img.pull-right {
   outline: none;
   position:relative;
   text-decoration: none;
-  border: 1px solid #607D8B;
   cursor: pointer; }
   /* .btn:before {
     position: absolute;
@@ -298,10 +297,10 @@ img.pull-right {
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);  */
   }
   .sponsor-btn > .btn {
-    border: solid 1px #fff;
     z-index: 1 !important;
     color: #000;
     margin-top: 30px;
+    background: #fff;
   }
   /* .sponsor-btn > .btn:before {
     background: #0acbf5;
@@ -341,28 +340,12 @@ img.pull-right {
 .section-title,
 .column-title {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000;
   position: relative;
   padding-bottom: 30px;
-  margin-bottom: 85px;
+  margin-bottom: 10px;
   text-align: center; }
-  .section-title:after,
-  .column-title:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: '';
-    right: 0;
-    background-image: url(../images/shap/title.png);
-    background-repeat: no-repeat;
-    background-size: center center;
-    background-position: contain;
-    width: 70px;
-    height: 10px;
-    margin: auto auto 0;
-    top: auto;
-    bottom: 0; }
   .section-title span,
   .column-title span {
     display: block;
@@ -378,9 +361,6 @@ img.pull-right {
   .section-title.white,
   .column-title.white {
     color: #fff; }
-    .section-title.white:after,
-    .column-title.white:after {
-      background-image: url(../images/shap/title-white.png); }
     .section-title.white span,
     .column-title.white span {
       color: #fff; }
@@ -487,7 +467,7 @@ img.pull-right {
     height: 40px;
     line-height: 40px;
     padding: 0px 25px;
-    /* background: #00c1c1; */
+    background: #e7015e;
     margin-left: 30px; }
     .header ul.navbar-nav > li.header-ticket .ticket-btn:hover {
       background: #e7015e; }
@@ -620,7 +600,7 @@ img.pull-right {
       }
     .banner-item .banner-content-wrap .banner-title {
       font-size: 64px;
-      font-weight: 800;
+      font-weight: 700;
       color: 000;
       text-transform: uppercase;
       line-height: 74px;
@@ -891,7 +871,7 @@ img.pull-right {
   border-top: 4px solid #e7015e; }
   .hero-form-content h2 {
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 30px; }
@@ -1138,7 +1118,7 @@ img.pull-right {
       width: 100%;
       height: 100%;
       content: '';
-      background: rgba(255, 245, 130, 0.5);
+      background: rgba(0, 217, 255, 0.35);
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease;
       -webkit-transition: all 0.4s ease;
@@ -1155,11 +1135,11 @@ img.pull-right {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     color: #fff;
-    font-size: 22px;
+    font-size: 26px;
     width: 50px;
     height: 50px;
     margin: auto;
-    border: 2px solid #ddd;
+    border: 2px solid #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -1185,10 +1165,10 @@ img.pull-right {
     top: 50%;
     opacity: 1; }
   .ts-speaker:hover .ts-title a {
-    color: #607D8B; }
+    color:#222; }
   .ts-speaker.white-text .ts-title a,
   .ts-speaker.white-text p {
-    color: #fff; }
+    color: #222; }
 
 .speaker-classic {
   padding-top: 100px; }
@@ -1650,7 +1630,7 @@ img.pull-right {
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.4); }
   .ts-pricing-box .ts-pricing-header .ts-pricing-name {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     color: #3b1d82;
     text-transform: uppercase;
     margin-bottom: 15px; }
@@ -1732,7 +1712,7 @@ img.pull-right {
     margin-bottom: 35px; }
   .ts-pricing-item .ts-pricing-price {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 700;
     position: relative;
     margin-bottom: 50px; }
     .ts-pricing-item .ts-pricing-price img {
@@ -1982,9 +1962,6 @@ img.pull-right {
   height: 535px;
   width: 535px;
   overflow: hidden;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
   border: none; }
   .ts-map .mapouter .gmap_canvas iframe {
     position: absolute;
@@ -2194,25 +2171,9 @@ img.pull-right {
       padding: 7px 0;
       margin: 0 5px; }
       .ts-footer-social-link:hover {
-        color: #000;
-      }
-      .ts-footer-social ul li:before {
-        position: absolute;
-        left: -3px;
-        top: 3px;
+        color: #fff;
         background: #0acbf5;
-        content: '';
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -ms-border-radius: 50%;
-        bottom: 0;
-        width: 40px;
-        right: 0;
-        height: 40px;
-        z-index: -1;
-      }
-      .ts-footer-social ul li:hover:before {
-        background: #fff;
+        border-color: #0acbf5
       }
 
 .footer-menu ul li {
@@ -2377,7 +2338,7 @@ img.pull-right {
     color: #fff;
     font-size: 60px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 20px; }
   .page-banner-title .breadcrumb {
     background: none;
@@ -3057,13 +3018,23 @@ faq-item
 
     .tematicas {
       display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
     }
     .tematicas div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 18%;
       padding: 20px;
       margin: 0 1%;
       text-align: center;
       border-radius: 5%;
       box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
+    }
+    .tematicas div img {
+      width: 100%;
+      opacity: .25;
     }
     .tweb {
       background-color: #0acbf5;
@@ -3091,20 +3062,19 @@ faq-item
       font-weight: 700
     }
 
-    @media (max-width: 600px) {
-      .tematicas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-items: center;
-        justify-content: center;
-        align-items: center;
-      }
-
+    @media (max-width: 800px) {
       .tematicas div {
         margin: 1%;
+        width: 31%;
       }
 
       .sponsors-logo .img-fluid {
         max-width: 200px;
+      }
+    }
+    @media (max-width: 600px) {
+      .tematicas div {
+        margin: 1%;
+        width: 48%;
       }
     }
