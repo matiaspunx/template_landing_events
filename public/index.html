@@ -14,7 +14,7 @@
    <meta property="og:locale" content="es_AR" />
    <meta property="og:locale:alternate" content="es_ES" />
    <meta property="og:url" content="https://www.meetup.com/es-ES/GDG-WTM/" />
-   <meta property="og:image" content="images/gdg/og_image.png" />
+   <meta property="og:image" content="images/home2.png" />
 
    <!-- Twitter card -->
    <meta name="twitter:card" content="summary_large_image"></meta>
@@ -59,11 +59,17 @@
                         <a href="#aboutit">¿Qué es el Devfest?</a>
                      </li>
                      <li class="nav-item">
+                        <a href="#agenda">Agenda</a>
+                     </li>
+                     <li class="nav-item">
                         <a href="#speakers">Speakers</a>
                      </li>
                      <li class="nav-item">
                         <a href="#sponsors">Sponsors</a>
                      </li>
+                     <!-- <li class="nav-item">
+                        <a href="https://developers.google.com/community/gdg/organizers/resources/#code-of-conduct" target="_blank">Código de conducta</a>
+                     </li> -->
                      <li class="header-ticket nav-item">
                         <a class="ticket-btn btn" href="https://www.meetup.com/es-ES/gdg-wtm/events/264036293/"
                            target="_blank">¡Venite al Devfest!</a>
@@ -116,24 +122,18 @@
             <div class="row">
                <div class="col-lg-12">
                   <h2 class="section-title">
-                     <span>Sobre el</span>
-                     Devfest 2019
+                     <span>Sobre el</span> Devfest 2019
                   </h2>
 
                   <div class="row">
                         <div class="col-12">
                            <p class="text-center">El DevFest es el evento anual más importante de la comunidad GDG (Google Developer Groups) llevado a cabo en simultáneo,
-                              en todo el mundo, por más de 900 grupos de desarrolladores y emprendedores. El objetivo del DevFest es agrupar en un
-                              mismo lugar a los mejores exponentes de las distintas herramientas disponibles en el mercado y acercar el conocimiento a
-                              nuestras comunidades locales.</p>
+                              en todo el mundo por más de 900 grupos de desarrolladores y emprendedores. (<a href="https://www.meetup.com/es-ES/gdg-wtm/events/264036293/" target="_blank">Más info</a>) </p>
 
-                              <p class="text-center">En esta oportunidad contaremos con la participación de miembros de otras comunidades nacionales, Experts y Googlers,
-                              quienes brindaran charlas y workshops.</p>
+                              <p class="text-center"><strong>Al concurrir al evento estás aceptando el <a href="https://developers.google.com/community/gdg/organizers/resources/#code-of-conduct" target="_blank">Código de
+                                    conducta</a>.</strong></p>
 
-                              <p class="text-center">El evento se desarrollará el sábado 12 de Octubre de 10:00 a 18:00.</p>
-
-                              <p class="text-center">Este año vamos a contar con 5 temáticas en diferentes tracks.</p>
-
+                              <p class="text-center">Este año contamos con 5 temáticas:</p>
                               <div class="tematicas">
                                  <div class="tweb"><span>Web Dev</span> <img src="images/web.png" alt="Web Dev"> </div>
                                  <div class="tcloud"><span>Cloud</span> <img src="images/cloud.png" alt="Cloud"></div>
@@ -152,7 +152,6 @@
          <a id="speakers"></a>
       </section>
 
-      <!-- SPEAKERS -->
       <section id="ts-speakers" name="speakers" class="ts-speakers">
          <div class="container">
             <div class="row">
@@ -163,248 +162,582 @@
                   </h2>
                </div>
             </div>
+            <div id="speakers-holder"></div>
+         </div>
+         <a id="agenda"></a>
+      </section>
+
+
+      <!-- AGENDA -->
+      <section class="ts-schedule">
+         <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/grant.png" alt="Grant Timmerman">
-                              <a href="#popup_1" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                 <i class="icon icon-code"></i>
-                              </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Grant Timmerman</a></h3>
-                              <p>
-                                 Developer Platform Engineer, Google
-                              </p>
-                           </div>
-                        </div>
+               <div class="col-lg-8 mx-auto">
+                  <h2 class="section-title text-center">
+                     <span>Acomodá tus horarios</span>
+                     Agenda del #Devfest!
+                  </h2>
 
-                        <div id="popup_1" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/grant.png" alt="Grant Timmerman">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Grant Timmerman</h3>
-                                    <span class="speakder-designation">Developer Platform Engineer, Google</span>
-                                    <p>
-                                       Googler working on Cloud.
-                                    </p>
-                                    <!--AGENDA DE ANAHI-->
-                                    <!-- <div class="row">
-                                       <div class="col-lg-12">
-                                          <div class="speaker-session-info">
-                                             <h4>Track #1</h4>
-                                             <span>14.30 - 15.00 pm</span>
-                                             <p>
-                                                Go Serverless with Google Cloud Functions
-                                             </p>
-                                             <p>Your development agility comes from building systems composed of small,
-                                                independent units of functionality focused on doing one thing well.
-                                                Cloud Functions lets you build and deploy services at the level of a
-                                                single function, not at the level of entire applications, containers, or
-                                                VMs. In this session, you will learn the fundamentals about Google Cloud
-                                                Functions, some use-cases, and how to write Cloud Functions in
-                                                TypeScript!</p>
-                                          </div>
-                                       </div>
-                                    </div> -->
-                                    <div class="ts-speakers-social">
-                                       <a href="https://www.facebook.com/granttimmerman"><i
-                                             class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/granttimmerman"><i class="fa fa-twitter"></i></a>
-                                       <a href="https://www.instagram.com/granttimmerman"><i
-                                             class="fa fa-instagram"></i></a>
-                                       <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/santiago-carrillo.png" alt="">
-                              <a href="#popup_2" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                 <i class="icon icon-code"></i>
-                              </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Santiago Carrillo</a></h3>
-                              <p>
-                                 GDE Android
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_2" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/santiago-carrillo.png" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Santiago Carrillo</h3>
-                                    <span class="speakder-designation">GDE Android</span>
-                                    <p>
-
-                                    </p>
-                                    <!--AGENDA DE ANAHI-->
-                                    <!-- <div class="row">
-                                       <div class="col-lg-12">
-                                          <div class="speaker-session-info">
-                                             <h4>Track #1</h4>
-                                             <span>10.30 - 11.30 am</span>
-                                             <p>
-                                                Charla Android
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div> -->
-                                    <div class="ts-speakers-social">
-                                       <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                                       <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                                       <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/sebastian-gomez.jpg" alt="">
-                              <a href="#popup_3" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                 <i class="icon icon-code"></i>
-                              </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Sebastian Gomez</a></h3>
-                              <p>
-                                 GDE Web
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_3" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/sebastian-gomez.jpg" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Sebastian Gomez</h3>
-                                    <span class="speakder-designation">GDE Web</span>
-                                    <p>
-                                       Sebastián Gómez, soy ingeniero de sistemas e Informática y Magister en Ingeniería
-                                       de Sistemas de la Universidad Nacional de Colombia. Soy el organizador del Google
-                                       Developers Group de Medellín y Google Developer Expert en Web technologies desde
-                                       el 2018.
-                                    </p>
-                                    <div class="ts-speakers-social">
-                                       <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                                       <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                                       <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="900ms">
-                        <div class="ts-speaker">
-                           <div class="speaker-img">
-                              <img class="img-fluid" src="images/speakers/yuri-camacho.jpg" alt="">
-                              <a href="#popup_4" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                                 <i class="icon icon-code"></i>
-                              </a>
-                           </div>
-                           <div class="ts-speaker-info">
-                              <h3 class="ts-title"><a href="#">Yury Camacho </a></h3>
-                              <p>
-                                 GDE Android
-                              </p>
-                           </div>
-                        </div>
-
-                        <div id="popup_4" class="container ts-speaker-popup mfp-hide">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/speakers/yuri-camacho.jpg" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Yuri Camacho</h3>
-                                    <span class="speakder-designation">GDE Android</span>
-                                    <p>
-                                       Experienced Mobile Application Developer with a demonstrated history of working
-                                       in the internet industry. Skilled in Android development, Mobile architectures,
-                                       Kotlin, Flutter, Google Cloud Platform, Mobile Applications. International
-                                       speaker with more than 30 talks about Mobile development
-                                    </p>
-
-                                    <!-- <h4 class="session-name">
-                                       Sessions by David
-                                    </h4>
-                                    <div class="row">
-                                       <div class="col-lg-6">
-                                          <div class="speaker-session-info">
-                                             <h4>Day 1</h4>
-                                             <span>10.30 - 11.30 am</span>
-                                             <p>
-                                                Marketing Matters
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-6">
-                                          <div class="speaker-session-info">
-                                             <h4>Day 1</h4>
-                                             <span>10.30 - 11.30 am</span>
-                                             <p>
-                                                Marketing Matters
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div> -->
-                                    <div class="ts-speakers-social">
-                                       <a href="https://www.facebook.com/camachoyury"><i class="fa fa-facebook"></i></a>
-                                       <a href="https://twitter.com/camachoyury" target="_blank"><i
-                                             class="fa fa-twitter"></i></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="ts-schedule-nav">
+                     <ul class="nav nav-tabs justify-content-center" role="tablist">
+                        <li class="nav-item">
+                           <a class="active" title="Charlas" href="#date1" role="tab" data-toggle="tab">
+                              <h3>Charlas</h3>
+                              <span>Track #1 y Track #2</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="" href="#date2" title="Workshops" role="tab" data-toggle="tab">
+                              <h3>Workshops</h3>
+                              <span>Track #3</span>
+                           </a>
+                        </li>
+                     </ul>
+                     <!-- Tab panes -->
                   </div>
-                  <div class="row justify-content-center">
-                     <div class="col">
-                        <h5 style="text-align: center; color: #666; font-style: italic">El robot está esperando que le envíen las fotos y las bios... En breve agregamos todos los speakers.</h5>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="tab-content schedule-tabs">
+
+                     <div role="tabpanel" class="tab-pane active" id="date1">
+
+                        <div class="schedule-listing launce">
+                           <div class="schedule-slot-time">
+                              <span> 9:00 - 9:30 AM</span>
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="charla charla-center">
+                                 <a href="javascript:void(0)">
+                                    <img class="schedule-slot-speakers" src="images/favicon.png" alt="GDG Río de La Plata">
+                                 </a>
+                                 <div class="schedule-slot-info-content"></div>
+                                 <h3 class="schedule-slot-title">Acreditación
+                                    <strong>GDG Río de La Plata</strong>
+                                 </h3>
+                                 </div>
+                              </div>
+                           </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 9:30 - 9:50 AM</span>
+                              ¡Presentación!
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="charla charla-center">
+                              <a href="javascript:void(0)">
+                                 <img class="schedule-slot-speakers" src="images/favicon.png"
+                                    alt="GDG & WTM">
+                              </a>
+                              <div class="schedule-slot-info-content">
+                                 <h3 class="schedule-slot-title">Presentación del evento a cargo de los organizadores.
+                                    <strong>GDG Río de La Plata</strong>
+                                 </h3>
+                                 <p></p>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 10:00 - 10:30 AM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_813" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/luca.jpeg" alt="Luca Jaichenco">
+                                       </a>
+                                       <a href="#popup_814" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/joaquin.jpeg" alt="Joaquín Polonuer">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Machine Learning - ¿Que tan difícil puede ser?
+                                             <strong>Luca Jaichenco y Joaquín Polonuer (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <a href="#popup_812" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/logos/uxbaufest.png" alt="Baufest">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Del Design Thinking al product Backlog
+                                             <strong>UX Baufest(Track #2)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 10:30 - 11:00 AM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_5" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/german.jpg" alt="Germán Küber">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Arquitectura en aplicaciones Angular y buenas practicas.
+                                             <strong>Germán Küber (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <!-- continua anterior -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 11:00 - 11:30 AM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_81" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/luli.jpeg" alt="Luli Martin (Kairos)">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Expectativas vs realidad.
+                                             <strong>Luli Martin (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                          <a href="#popup_801" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                             <img class="schedule-slot-speakers" src="images/speakers/pablovinas.jpg" alt="Pablo Viñas">
+                                          </a>
+                                          <div class="schedule-slot-info-content">
+                                             <h3 class="schedule-slot-title">UX Writing – Interfaces más humanas.
+                                                <strong>Pablo Viñas (Track #2)</strong>
+                                             </h3>
+                                             <p></p>
+                                          </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 11:30 - 12:00 AM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_70" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/yas.png" alt="Yas Garcia">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">El valor de los datos en la era digital.
+                                             <strong>Yas Garcia (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <!-- continua.. -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 12:00 - 12:30 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_7" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/mike.png" alt="Michael Dorka">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Conversaciones con usuarios. Como mejorar tu producto entrevistando a usuarios.
+                                             <strong>Michael Dorka (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                          <a href="#popup_22" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                             <img class="schedule-slot-speakers" src="images/speakers/paulina-becerra.jpg" alt="Paulina Becerra">
+                                          </a>
+                                          <div class="schedule-slot-info-content">
+                                             <h3 class="schedule-slot-title">Una visión del diseño en campos transdisciplinares
+                                                <strong>Paulina Becerra (Track #2)</strong>
+                                             </h3>
+                                             <p></p>
+                                          </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 12:00 - 12:30 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_10" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/betsy.jpeg" alt="Betsy Cohen">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Bicis, libros y ciencia de datos
+                                             <strong>Betsy Cohen (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <!-- continua Paula -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing launce">
+                           <div class="schedule-slot-time">
+                              <span>13:00 - 14:00 PM</span>
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="charla charla-center">
+                                 <a href="javascript:void(0)">
+                                    <img class="schedule-slot-speakers" src="images/almuerzo.jpg" alt="GDG Río de La Plata">
+                                 </a>
+                                 <div class="schedule-slot-info-content"></div>
+                                 <h3 class="schedule-slot-title">¡Hora del refrigerio!
+                                    <strong>¡Piso 7!</strong>
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span>14:00 - 14:30 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_1" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/grant.png" alt="Grant Timmerman">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Go Serverless with Google Cloud Functions
+                                             <strong>Grant Timmerman (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <a href="#popup_40" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/paula.jpeg" alt="Paula Gómez Zerbino (Juventear)">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">La vida de los mil sombreros
+                                             <strong>Paula Gómez Zerbino (Track #2)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span>14:30 - 15:00 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <!-- Continua... -->
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <a href="javascript:void(0)">
+                                          <img class="schedule-slot-speakers" src="images/logos/juventear.jpeg"
+                                             alt="Juventear">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Sub 18: Utopías y distopías en un mundo tecnológico
+                                             <strong>Juventear (Track #2)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span>15:00 - 15:30 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_2" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/santiago-carrillo.jpeg" alt="Santiago Carrillo">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Inyección de dependencias en Android con Kotlin y Koin
+                                             <strong>Santiago Carrillo (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <a href="#popup_30" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/jessicas.png" alt="Jessica Saavedra">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Sistemas de tipos y feminismo.
+                                             <strong>Jessica Saavedra (Track #2)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span>15:30 - 16:00 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_6" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/carlo.png"
+                                             alt="Carlo Huaman (GDE)">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Creating an Action for the next billion users. Knowing Google Assistant.
+                                             <strong>Carlo Huaman 🇵🇪 (GDE) (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <a href="#popup_20" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/ale.jpg" alt="Alejandra Estrella">
+                                       </a>
+                                       <a href="#popup_21" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/celeste_longo.jpg" alt="Celeste Longo">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Derribando Estereotipos en Tecnología
+                                             <strong>Alejandra Estrella & Celeste Longo (IEEE Women in Engineering) (Track #2)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span>16:00 - 16:30 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_3" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/sebastian-gomez.jpg" alt="Sebastian Gomez (GDE)">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">AngularFire y Angular Maps para hacer onReal Time tracking.
+                                             <strong>Sebastian Gomez (GDE) (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <a href="javascript:void(0)">
+                                          <img class="schedule-slot-speakers" src="images/speakers/paulak.png" alt="Paula kvedaras">
+                                       </a>
+                                       <a href="javascript:void(0)">
+                                          <img class="schedule-slot-speakers" src="images/speakers/anab.png" alt="Ana Bardoneschi">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Aplicando Scrum a mi equipo.
+                                             <strong>Paula kvedaras / Ana Bardoneschi (Track #2)</strong>
+                                          </h3>
+                                          <p>Implementación de Metododologias agiles con el framework Scrum a nivel equipos.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span>16:30 - 17:00 PM</span>
+                              Charlas
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla charla-left">
+                                       <a href="#popup_8" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                          <img class="schedule-slot-speakers" src="images/speakers/pda.jpeg"
+                                             alt="Pablo Perez De Angelis">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Data science para SEO: A/B testing
+                                             <strong>Pablo Perez De Angelis (Track #1)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="charla">
+                                       <a href="javascript:void(0)">
+                                          <img class="schedule-slot-speakers" src="images/logos/lt.png" alt="Lightning Talks">
+                                       </a>
+                                       <div class="schedule-slot-info-content">
+                                          <h3 class="schedule-slot-title">Lightning Talks.
+                                             <strong>(Estudiantes) (Track #2)</strong>
+                                          </h3>
+                                          <p></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <div role="tabpanel" class="tab-pane" id="date2">
+
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span> 14:00 - 16:00 PM</span>
+                              Workshop
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="charla">
+                              <a href="javascript:void(0)">
+                                 <img class="schedule-slot-speakers" src="images/logos/logo+m.png"
+                                    alt="+ Mujeres en UX">
+                              </a>
+                              <div class="schedule-slot-info-content">
+                                 <h3 class="schedule-slot-title">Creando interfases inclusivas: Accesibilidad en el diseño de experiencia de usuario.
+                                    <strong>+MujeresEnUX (Track #3)</strong>
+                                 </h3>
+                                 <p>
+                                    Para este Workshop vas a necesitar traer tu computadora cargada o celular y auriculares.
+                                 </p>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="schedule-listing">
+                           <div class="schedule-slot-time">
+                              <span>16:30 - 18:00 PM</span>
+                              Workshop
+                           </div>
+                           <div class="schedule-slot-info">
+                              <div class="charla">
+                              <a href="#popup_6" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                 <img class="schedule-slot-speakers" src="images/speakers/carlo.png"
+                                    alt="Carlo Huaman 🇵🇪">
+                              </a>
+                              <div class="schedule-slot-info-content">
+                                 <h3 class="schedule-slot-title">Hola mundo con Google Assistant.
+                                    <strong>Carlo Huaman 🇵🇪 (Track #3)</strong>
+                                 </h3>
+                                 <p>Para este Workshop vas a necesitar traer tu computadora cargada.</p>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
+         </div>
+         <a id="sponsors"></a>
       </section>
-      <!-- SPEAKERS -->
+      <!-- AGENDA -->
 
 
-      <section class="ts-intro-sponsors" style="background: #000">
+      <section class="ts-intro-sponsors" style="background: #333">
          <div class="container">
             <div class="row">
                <div class="col-lg-12">
@@ -420,19 +753,89 @@
                      <div class="row justify-content-center">
                         <div class="col-md-2 d-flex align-items-center justify-content-center">
                            <p>
+                              <img src="images/sponsors/google.png" alt="Google" class="img-fluid">
+                           </p>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                           <p>
                              <a href="https://baufest.com/es/" target="_blank"><img src="images/logos/baufest-blanco.png"
                                 alt="Baufest" class="img-fluid"></a>
                            </p>
                         </div>
                         <div class="col-md-2 d-flex align-items-center justify-content-center">
                            <p>
-                              <img src="images/sponsors/google.png" alt="Google" class="img-fluid">
+                              <a href="https://hitcowork.co/hit-libertador/" target="_blank">
+                              <img src="images/sponsors/hit.png" alt="HIT Cowork" class="img-fluid">
+                              </a>
                            </p>
                         </div>
                      </div>
 
                      <div class="sponsor-btn text-center">
                         <a href="mailto:matias.punx@gmail.com" class="btn">¡Quiero ser sponsor!</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+            </section>
+
+            <section class="ts-intro-sponsors ts-intro-comm" style="background: #f4f4f4">
+               <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h2 class="section-title">
+                     Comunidades
+                  </h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="sponsors-logo text-center">
+
+                     <div class="row justify-content-center">
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                           <p>
+                              <a href="https://www.facebook.com/Google-Crowdsource-338690950316286/"
+                                 target="_blank"><img
+                                    src="images/logos/google_crowdsource.png" alt="Google Crowdsource" class="img-fluid"></a>
+                           </p>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                           <p>
+                              <a href="https://www.meetup.com/es-ES/PHP-Baires/" target="_blank"><img
+                                    src="images/logos/phpbaires_logo.png" alt="PHP Baires"
+                                    class="img-fluid"></a>
+                           </p>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                           <p>
+                              <a href="https://www.instagram.com/masmujeresux.ar/" target="_blank"><img
+                                    src="images/logos/logo+m.png" alt="masmujeresux.ar"
+                                    class="img-fluid"></a>
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="row justify-content-center">
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                           <p>
+                              <a href="#" target="_blank"><img
+                                    src="images/logos/wie.svg" alt="WIE Argentina" class="img-fluid"></a>
+                           </p>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                           <p>
+                              <a href="https://www.mediachicas.com/" target="_blank"><img src="images/logos/mc.png"
+                                    alt="Media Chicas" class="img-fluid"></a>
+                           </p>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                           <p>
+                              <a href="https://www.meetup.com/es-ES/Net-Baires/" target="_blank"><img src="images/logos/netbaires.png"
+                                    alt="Net-Baires" class="img-fluid"></a>
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -468,13 +871,16 @@
                               <p class="derecttion-vanue">
                                  Av. del Libertador 8620 · CABA
                               </p>
+                              <div class="img">
+                                 <img src="images/hit_libertador.jpg" alt="HIT Cowork">
+                              </div>
                            </div>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="date">
                            <div class="direction-tabs-content">
                               <h3>Sábado 12 de octubre de 2019</h3>
                               <p class="derecttion-vanue">
-                                 10:00 AM hasta 06:00 PM
+                                 Desde las 9:00 hasta las 18:00.
                               </p>
                            </div>
                         </div>
@@ -499,17 +905,22 @@
       </section>
 
       <div class="footer-area">
-         <section class="ts-book-seat" style="background-color:#0acbf5">
+         <section class="ts-book-seat" style="background-color:#202124">
             <div class="container">
                <div class="ts-footer-newsletter">
                   <div class="ts-newsletter">
                      <div class="row">
-                        <div class="col-lg-4 mx-auto">
+                        <div class="col mx-auto">
                            <div class="ts-newsletter-content">
                               <h2 class="section-title">
                                  <span>Organiza:</span>
                               </h2>
-                              <img src="images/logos/gdg-logo.png" alt="GDG Río de La Plata" class="img-fluid">
+                              <div class="f-organizan">
+                              <a href="https://www.meetup.com/es-ES/gdg-wtm/"><img
+                                    src="images/logos/gdg-logo.png" alt="GDG Río de La Plata"></a>
+                              <a href="https://www.meetup.com/es-ES/gdg-wtm/"><img src="images/wtm.png"
+                                    alt="Women Techmakers Río de La Plata"></a>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -525,20 +936,26 @@
                      <div class="ts-footer-social text-center mb-30">
                         <ul>
                            <li>
-                              <a class="ts-footer-social-link" href="https://www.facebook.com/gdgriodelaplata/"><i class="fa fa-facebook"></i></a>
+                              <a class="ts-footer-social-link" href="https://instagram.com/gdgriodelaplata/" target="_blank"><i class="fa fa-instagram"></i></a>
                            </li>
                            <li>
-                              <a class="ts-footer-social-link" href="https://twitter.com/gdgriodelaplata"><i class="fa fa-twitter"></i></a>
+                              <a class="ts-footer-social-link" href="https://twitter.com/gdgriodelaplata" target="_blank"><i class="fa fa-twitter"></i></a>
                            </li>
                            <li>
-                              <a class="ts-footer-social-link" href="https://www.meetup.com/es-ES/gdg-wtm/"><i
+                              <a class="ts-footer-social-link" href="https://www.meetup.com/es-ES/gdg-wtm/"
+                                 target="_blank"><i
                                     class="fa fa-meetup"></i></a>
+                           </li>
+                           <li>
+                              <a class="ts-footer-social-link" href="https://www.facebook.com/gdgriodelaplata/"
+                                 target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
                            </li>
                         </ul>
                      </div>
 
                      <div class="copyright-text text-center">
-                        <p>GDG Río de La Plata, 2019.</p>
+                        <p>GDG Río de La Plata, 2019. Template editado basado en el <a href="https://github.com/gdgcali/template_landing_events" target="_blank">template</a> de GDG Cali</p>
                      </div>
 
                   </div>
@@ -558,7 +975,6 @@
       <script src="js/jquery.appear.min.js"></script>
       <script src="js/jquery.jCounter.js"></script>
       <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
       <script src="js/wow.min.js"></script>
       <script src="js/isotope.pkgd.min.js"></script>
 

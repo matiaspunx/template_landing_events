@@ -51,13 +51,6 @@ jQuery(function($) {
     });
   }
 
-  // if($('.navbar li.dropdown ul').length){
-  // 	 //Disable dropdown parent link
-  //     $('.navbar .navbar-nav li.dropdown > a').on('click', function(e) {
-  // 		e.preventDefault();
-  // 	});
-  // }
-
   /* ----------------------------------------------------------- */
   /*  Event counter
    /* -----------------------------------------------------------*/
@@ -155,76 +148,99 @@ jQuery(function($) {
     $(window).resize(isotope);
   } // End is_exists
 
-  /*==========================================================
-          main slider
-  ======================================================================*/
-  if ($('.main-slider').length > 0) {
-    var bannerSlider = $('.main-slider');
-    bannerSlider.owlCarousel({
-      items: 1,
-      mouseDrag: true,
-      loop: true,
-      touchDrag: true,
-      autoplay: true,
-      dots: true,
-      autoplayTimeout: 5000,
-      animateOut: 'fadeOut',
-      autoplayHoverPause: true,
-      smartSpeed: 250
+  /*
+  LOAD SPEAKERS
+  */
+
+  $.getJSON("./data/rockstars.json", function (data) {
+    var items = [];
+    // var items = data[Math.floor(Math.random()*data.length)];
+    var item;
+    $.each(data, function (key, val) {
+      item = `<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s" data-wow-delay="300ms">
+                        <div class="ts-speaker">
+                           <div class="speaker-img">
+                              <img class="img-fluid" src="images/speakers/${val.img}" alt="${val.nombre}">
+                              <a href="#popup_${val.id}" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in">
+                                 <i class="icon icon-code"></i>
+                              </a>
+                           </div>
+                           <div class="ts-speaker-info">
+                              <h3 class="ts-title">${val.nombre}</h3>
+                              <p>
+                                 ${val.title}
+                              </p>
+                           </div>
+                        </div>
+
+                        <div id="popup_${val.id}" class="container ts-speaker-popup mfp-hide">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="ts-speaker-popup-img" style="background-image: url(images/speakers/${val.img})">
+                                    <!-- img src="images/speakers/${val.img}" alt="${val.nombre}" -->
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="ts-speaker-popup-content">
+                                    <h3 class="ts-title">${val.nombre}</h3>
+                                    <span class="speakder-designation">${val.title}</span>
+                                    <p>
+                                       ${val.bio}
+                                    </p>
+                                    <h4 class="session-name">
+                                      Charla
+                                    </h4>
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="speaker-session-info">
+                                          <span>${val.horario}</span>
+                                          <p>
+                                            ${val.charla}
+                                          </p>
+                                          <p class="desc">
+                                            ${val.desc}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="ts-speakers-social">
+                                       <a href="${val.rrss1}" target="_blank"><i class="${val.rrss1icon}"></i></a>
+                                       <a href="${val.rrss2}" target="_blank"><i class="${val.rrss2icon}"></i></a>
+                                       <a href="${val.rrss3}" target="_blank"><i class="${val.rrss3icon}"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>`;
+      items.push(item);
     });
-  }
+    $("<div/>", {
+      class: "row",
+      html: items.join("")
+    }).appendTo("#speakers-holder");
+  });
+
+/*
+ LOAD SPEAKERS
+ */
 
   /*=============================================================
 			 speaker popup
 	=========================================================================*/
 
-  $('.ts-image-popup').magnificPopup({
+  $(document).magnificPopup({
+    delegate: '.ts-image-popup',
     type: 'inline',
     closeOnContentClick: false,
     midClick: true,
     callbacks: {
       beforeOpen: function() {
         this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-    zoom: {
-      enabled: true,
-      duration: 500 // don't foget to change the duration also in CSS
-    },
-    mainClass: 'mfp-fade'
-  });
-
-  /*=============================================================
-   			gallery
-   	=========================================================================*/
-
-  $('.ts-popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: false,
-    midClick: true,
-    callbacks: {
-      beforeOpen: function() {
-        this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-    zoom: {
-      enabled: true,
-      duration: 500 // don't foget to change the duration also in CSS
-    },
-    mainClass: 'mfp-fade'
-  });
-
-  /*=============================================================
-   			video popup
-   	=========================================================================*/
-
-  $('.ts-video-popup').magnificPopup({
-    type: 'iframe',
-    closeOnContentClick: false,
-    midClick: true,
-    callbacks: {
-      beforeOpen: function() {
-        this.st.mainClass = this.st.el.attr('data-effect');
+        $('html, body').css('overflow-y', 'hidden');
+      },
+      beforeClose: function() {
+        $('html, body').css('overflow-y', 'auto');
       }
     },
     zoom: {
